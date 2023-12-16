@@ -11,6 +11,6 @@ include_once 'RacesInfos.php';
 $database = new Database();
 $db = $database->getConnection();
 $RaceInfos = new RacesInfos($db);
-$Hippodromes = $RaceInfos->getAllHippodrome()->fetchAll(PDO::FETCH_COLUMN);
+$Hippodromes = $RaceInfos->getAllDriver()->fetchAll(PDO::FETCH_COLUMN);
 $json = json_encode($Hippodromes);
 echo $json;
