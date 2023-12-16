@@ -2,7 +2,7 @@
 class RacesInfos
 {
     private $conn;
-    private $db_table = "DailyKcal";
+    private $db_table = "dev_courses";
     public $trainer;
 
     public $driver;
